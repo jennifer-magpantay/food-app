@@ -6,6 +6,8 @@ This project is part of the Rocketseat Ignite - ReactJS course.
 
 ## Preview
 
+![food-app](https://user-images.githubusercontent.com/56962997/159304668-b364f379-851b-4c63-a522-921f02ba3f4b.gif)
+
 ## Technologies
 
 - ReactJS, TypeScript, JSON Server, styled-components.
