@@ -6,6 +6,7 @@ This project is part of the Rocketseat Ignite - ReactJS course.
  
 ## Preview
 
+![food-app](https://user-images.githubusercontent.com/56962997/159303551-0e1dd06a-d556-42d2-8395-02c905aaed25.gif)
 
 ## Technologies
 
