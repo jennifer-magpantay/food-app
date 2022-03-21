@@ -1,26 +1,26 @@
 {
   "foods": [
     {
-      "id": 2,
+      "image": "https://storage.googleapis.com/golden-wind/bootcamp-gostack/desafio-food/food2.png",
       "name": "Veggie Noodles",
-      "description": "Macarrão com pimentão, ervilha e ervas finas colhidas no himalaia.",
-      "price": "21.90",
+      "price": "19.90",
+      "description": "Noodles with peppers, peas, herbs and oyster sauce.",
       "available": true,
-      "image": "https://storage.googleapis.com/golden-wind/bootcamp-gostack/desafio-food/food2.png"
-    },
-    {
-      "id": 3,
-      "name": "A la Camarón",
-      "description": "Macarrão com vegetais de primeira linha e camarão dos 7 mares.",
-      "price": "25.90",
-      "available": true,
-      "image": "https://storage.googleapis.com/golden-wind/bootcamp-gostack/desafio-food/food3.png"
+      "id": 1
     },
     {
       "image": "https://storage.googleapis.com/golden-wind/bootcamp-gostack/desafio-food/food1.png",
-      "name": "Vegan Paella",
+      "name": "Vegan Chicken Noodles",
+      "price": "22.90",
+      "description": "These noodles are seriously saucy and delicious! It's also loaded with veggies.",
+      "available": true,
+      "id": 3
+    },
+    {
+      "image": "https://storage.googleapis.com/golden-wind/bootcamp-gostack/desafio-food/food1.png",
+      "name": "Soy and Spicy Noodles",
       "price": "19.90",
-      "description": "This classic Spanish dish is loved by many, mastered by few.",
+      "description": "These noodles are seriously saucy and delicious! It's loaded with veggies and tofu.",
       "available": true,
       "id": 4
     }
