@@ -1,11 +1,25 @@
-import { useEffect, useRef, useState, useCallback } from "react";
+import {
+  useEffect,
+  useRef,
+  useState,
+  useCallback,
+  FC,
+  InputHTMLAttributes,
+} from "react";
 
 import { useField } from "@unform/core";
 
 import { Container } from "./styles";
 
-export const Input = ({ name, icon: Icon, ...rest }) => {
-  const inputRef = useRef(null);
+interface InputProps extends InputHTMLAttributes<HTMLInputElement> {
+  name: string;
+  icon?: any;
+}
+
+// Where Icon comes from?
+export const Input: FC<InputProps> = ({ name, icon: Icon, ...rest }) => {
+  // for functional components always use useRef() staring with null value
+  const inputRef = useRef<any>(null);
 
   const [isFocused, setIsFocused] = useState(false);
   const [isFilled, setIsFilled] = useState(false);
@@ -18,7 +32,6 @@ export const Input = ({ name, icon: Icon, ...rest }) => {
 
   const handleInputBlur = useCallback(() => {
     setIsFocused(false);
-
     setIsFilled(!!inputRef.current?.value);
   }, []);
 

@@ -1,18 +1,19 @@
-import React, { useState, useEffect, ReactNode } from "react";
+import { useState, useEffect, ReactNode } from "react";
 import ReactModal from "react-modal";
 
 interface ModalProps {
   children: ReactNode;
-  setIsOpen: boolean;
+  isOpen: boolean;
+  setIsOpen: () => void;
 }
 
-export const Modal = ({ children, setIsOpen }: ModalProps) => {
-  const [modalStatus, setModalStatus] = useState();
+export const Modal = ({ children, isOpen, setIsOpen }: ModalProps) => {
+  const [modalStatus, setModalStatus] = useState(isOpen);
 
   useEffect(() => {
-   
-  }, [])
-  
+    setModalStatus(isOpen);
+  }, [isOpen]);
+
   return (
     <ReactModal
       shouldCloseOnOverlayClick={!false}

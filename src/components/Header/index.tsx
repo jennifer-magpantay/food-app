@@ -1,4 +1,3 @@
-import React from "react";
 import { FiPlusSquare } from "react-icons/fi";
 
 import { Container } from "./styles";
@@ -16,7 +15,7 @@ export const Header = ({ openModal }: HeaderProps) => {
         <nav>
           <div>
             <button type="button" onClick={openModal}>
-              <div className="text">Novo Prato</div>
+              <div className="text">New Dish</div>
               <div className="icon">
                 <FiPlusSquare size={24} />
               </div>
